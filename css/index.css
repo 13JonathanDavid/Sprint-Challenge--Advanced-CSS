@@ -140,6 +140,11 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+@media (max-width:500px) {
+  .hideOnSmall {
+    display: none !important;
+  }
+}
 h1,
 h2,
 h3,
@@ -180,19 +185,30 @@ p {
   max-width: 500px;
   margin: 0 auto;
 }
+.nav-wrapper nav a {
+  font: 2em 'Ubuntu', sans-serif;
+  color: #454A59;
+  text-decoration: none;
+}
+.nav-wrapper nav a:hover {
+  font: 2em 'Ubuntu', sans-serif;
+  color: #5b6276;
+  text-decoration: underline;
+}
 .nav-wrapper .img-header {
   object-fit: contain;
   width: 100%;
 }
 .nav-wrapper .logo {
-  font: 4em 'Russo One', sans-serif;
-  color: #23293B;
-  text-align: center;
-}
-.nav-wrapper a {
-  font: 2em 'Ubuntu', sans-serif;
+  font: 4em 'Russo One' , sans-serif;
   color: #454A59;
   text-decoration: none;
+  text-align: center;
+}
+.nav-wrapper .logo:hover {
+  font: 4em 'Russo One' , sans-serif;
+  color: #363f5b;
+  text-decoration: underline;
 }
 footer {
   color: #22283B;
@@ -221,6 +237,11 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width:500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -231,24 +252,64 @@ footer {
   margin-top: 13px;
 }
 .home .walk {
-  margin-top: 60px;
+  margin-top: 20px;
   border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
+  padding: 20px 20px;
   display: flex;
   justify-content: center;
 }
+@media (max-width:500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+  }
+}
 .home .walk .walk-text {
-  width: 50%;
+  width: 100%;
 }
 .home .walk .walk-text h3 {
-  margin-bottom: 10px;
+  margin: 15px 0;
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  background-color: #23293B;
+  border: none;
+  color: #cccccc;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3em;
+  border-radius: 10px;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #1a1e2b;
+  border: none;
+  color: #e6e6e6;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3em;
+  cursor: pointer;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
 .home .walk .walk-img {
-  width: 46%;
-  margin-left: 4%;
+  width: 100%;
+  margin-left: 20px;
+}
+@media (max-width:500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    align-self: flex-start;
+    margin: 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;

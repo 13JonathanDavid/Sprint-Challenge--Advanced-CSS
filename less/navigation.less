@@ -16,19 +16,18 @@
 		width:100%;
 		max-width:500px;
 		margin:0 auto;
+		a {
+	.mylink(~"2em '@{text-font}', @{text-font-backup}" ,@nav-font-color, lighten(@nav-font-color,10%));
+	}
 	}
 	.img-header {
 		object-fit: contain;
 		width:100%;
 	}
 	.logo {
-		font: 4em @header-font , @header-font-backup;
-		color:@header-font-color;
+		.mylink(~"4em '@{header-font}' , @{header-font-backup}" ,@header-font-color, lighten(@header-font-color,10%));
 		text-align:center;
 	}
-	a {
-		font: 2em @text-font , @text-font-backup;
-		color:@nav-font-color;
-		text-decoration:none;
-	}
+	
+	
 }
