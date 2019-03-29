@@ -136,6 +136,9 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 h1,
 h2,
@@ -159,6 +162,37 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  border: solid thin #F1F1F1;
+  width: 100%;
+  margin: 0 auto;
+  justifycontent: center;
+}
+.nav-wrapper nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.nav-wrapper .img-header {
+  object-fit: contain;
+  width: 100%;
+}
+.nav-wrapper .logo {
+  font: 4em 'Russo One', sans-serif;
+  color: #23293B;
+  text-align: center;
+}
+.nav-wrapper a {
+  font: 2em 'Ubuntu', sans-serif;
+  color: #454A59;
+  text-decoration: none;
 }
 footer {
   color: #22283B;

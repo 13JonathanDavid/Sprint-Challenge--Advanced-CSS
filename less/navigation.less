@@ -1,1 +1,34 @@
 // Navigation code here
+.nav-wrapper
+{
+	display:flex;
+	flex-direction:column;
+	background-color:@nav-bg;
+	border:solid thin @sea-shell;
+	width:100%;
+	margin:0 auto;
+	justify content:center;
+	
+	nav {
+		display:flex;
+		flex-direction:row;
+		justify-content:space-between;
+		width:100%;
+		max-width:500px;
+		margin:0 auto;
+	}
+	.img-header {
+		object-fit: contain;
+		width:100%;
+	}
+	.logo {
+		font: 4em @header-font , @header-font-backup;
+		color:@header-font-color;
+		text-align:center;
+	}
+	a {
+		font: 2em @text-font , @text-font-backup;
+		color:@nav-font-color;
+		text-decoration:none;
+	}
+}
