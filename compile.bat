@@ -1,1 +1,1 @@
-less-watch-compiler less css index.less
+less-watch-compiler --run-once less/main css
