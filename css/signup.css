@@ -316,3 +316,37 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.signup-container {
+  margin: 25px;
+}
+.signup-container button {
+  background-color: #23293B;
+  border: none;
+  color: #cccccc;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3em;
+  border-radius: 10px;
+}
+.signup-container button:hover {
+  background-color: #1a1e2b;
+  border: none;
+  color: #e6e6e6;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3em;
+  cursor: pointer;
+}
+@media (max-width:500px) {
+  .signup-container button {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+.signup-container h1 {
+  font-size: 5em;
+}

@@ -1,0 +1,1 @@
+less-watch-compiler --run-once less/main css

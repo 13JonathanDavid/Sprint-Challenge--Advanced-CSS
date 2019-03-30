@@ -8,12 +8,20 @@ html {
 }
 
 html, body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: @text-font, @text-font-backup;
   color: @main-font-color;
+  width:100%;
+  max-width:1200px;
+  margin: 0 auto;
+}
+.hideOnSmall {
+		@media @phone {
+		display:none !important; // probably a correct use of important :p
+		}
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: @header-font, @header-font-backup;
   color: @header-font-color;
 }
 
