@@ -1,7 +1,6 @@
 // Mixins Here
 
 .myButton(@size; @backgroundColor; @color) {
-	{
 	  border: none;
 	  background-color: @backgroundColor;
 	  border: none;
@@ -11,8 +10,7 @@
 	  text-decoration: none;
 	  display: inline-block;
 	  font-size: @size;
-	 }
-&:hover
+	&:hover
 	{
 	  border: none;
 	  background-color: darken(@backgroundColor,5%);
@@ -28,11 +26,9 @@
 }
 
 .mylink(@font, @color,@hoverColor) {
-	{
 		font: @font;
 		color:@nav-font-color;
 		text-decoration:none;
-	 }
 	&:hover{
 		font:@font;
 		color:@hoverColor;
